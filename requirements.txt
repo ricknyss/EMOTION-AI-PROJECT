@@ -1,6 +1,4 @@
-opencv-python
-numpy==1.23.5
-tensorflow==2.10.0
 streamlit
-pandas==1.5.3
-pyarrow==10.0.1
+opencv-python-headless
+numpy==1.23.5
+tensorflow==2.10.0 -m
