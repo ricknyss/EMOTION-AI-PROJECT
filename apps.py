@@ -3,7 +3,7 @@ import numpy as np
 import streamlit as st
 import tensorflow as tf
 
-# -------------------- PAGE CONFIG --------------------
+# -------------------- PAGE CONFIG ----------------------
 st.set_page_config(page_title="Emotion AI", layout="centered")
 
 st.markdown("""
@@ -15,7 +15,7 @@ body {
 </style>
 """, unsafe_allow_html=True)
 
-# -------------------- LOAD MODEL --------------------
+# -------------------- LOAD MODEL ---------------------
 model = tf.keras.models.load_model("emotion_model.hdf5", compile=False)
 
 # -------------------- LABELS --------------------
