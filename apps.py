@@ -74,7 +74,7 @@ while run:
         prediction = model.predict(roi_gray)
         emotion = emotion_labels[np.argmax(prediction)]
 
-        # DRAW BOX
+        # DRAW BOX()
         cv2.rectangle(frame, (x, y), (x+w, y+h), (255, 0, 0), 2)
         cv2.putText(frame, emotion, (x, y-10),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0,255,0), 2)
